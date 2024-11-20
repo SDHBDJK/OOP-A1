@@ -121,7 +121,50 @@ class Othertype extends HealthProfessional {
         System.out.println("Strong Point: " + strongPoint);
     }
 }
+// Reservation类定义
+class Reservation {
+    private String patientName; 
+    private String mobilePhoneNumber; 
+    private String meetingDoctor; 
  
+    // 默认构造函数
+    public Reservation() {
+    }
+ 
+    // 第二个构造函数，用于初始化所有的实例变量
+    public Reservation(String patientName, String mobilePhoneNumber, String meetingDoctor, String time ) {
+        this.patientName = patientName;
+        this.mobilePhoneNumber = mobilePhoneNumber;
+        this.meetingDoctor = meetingDoctor;
+        this.time=time
+    }
+ 
+    // Getter 和 Setter 方法
+    public String getpatientName() {
+        return patientName;
+    }
+ 
+    public void setpatientName(String patientName) {
+        this.patientName = patientName;
+    }
+ 
+    public String getmobilePhoneNumber() {
+        return mobilePhoneNumber;
+    }
+ 
+    public void setmobilePhoneNumber(String mobilePhoneNumber) {
+        this.mobilePhoneNumber = mobilePhoneNumber;
+    }
+ 
+    public String getmeetingDoctor() {
+        return meetingDoctor;
+    }
+ 
+    public void setmeetingDoctor(String meetingDoctor) {
+        this.meetingDoctor = meetingDoctor;
+    }
+}
+
 // 输入具体数据以及输出
 public class AssimentOne {
     public static void main(String[] args) {
